@@ -9,6 +9,14 @@ stage("checkout")
 stage("compile")
   {
   def mvnHOME = tool name: 'apache-maven-3.5.4', type: 'maven'
-    sh ="${mvnHOME}/bin/mvn package"
+    sh ="${mvnHOME}/bin/mvn compile"
 }
+
+  stage("package")
+  {
+    
+    mvn "package"
+
 }
+
+
