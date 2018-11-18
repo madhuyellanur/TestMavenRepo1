@@ -8,7 +8,7 @@ stage("checkout")
   
 stage("compile")
   {
-  def mvnHOME = tool name: 'apache-maven-3.6.0-bin', type: 'maven'
+  def mvnHOME = tool name: 'apache-maven-3.5.4', type: 'maven'
     sh ="${mvnHOME}/bin/mvn package"
 }
 }
