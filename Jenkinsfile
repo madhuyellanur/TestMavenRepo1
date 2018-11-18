@@ -16,7 +16,7 @@ stage("compile")
   {
     
     mvn "package"
-
+  }
 }
 
 
