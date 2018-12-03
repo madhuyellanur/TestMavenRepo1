@@ -3,7 +3,7 @@ node {
 stage("checkout")
   {
     
-   git "https://github.com/yellanurmadhu/TestMavenRepo1.git"
+   git "https://github.com/madhuyellanur/SampleApplication.git/"
   }
   
 stage("compile")
